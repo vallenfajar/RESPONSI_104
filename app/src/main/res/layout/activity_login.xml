@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#F39410">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="90dp"
+            android:drawableStart="@drawable/ic_person_outline_black_24dp"
+            android:hint="Username"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
+            android:background="#F39410"
+            android:text="Sign in"
+            android:textColor="#F8F7F7" />
+
+        <TextView
+            android:id="@+id/tv_pertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="You need account  ?"
+            android:textColor="#6B6868" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_below="@id/tv_pertanyaan"
+            android:textStyle="bold"
+            android:textColor="#6B6868"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_copyright"
+            android:layout_centerHorizontal="true"
+            android:text="CopyRight©FajarVallen"
+            android:layout_marginTop="450dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

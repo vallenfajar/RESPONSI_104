@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_smartphone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_smartphone"/>
+    <TextView
+        android:id="@+id/tv_personal"
+        android:text=" "
+        android:drawableStart="@drawable/ic_assignment_ind_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>
